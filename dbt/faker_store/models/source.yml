@@ -1,0 +1,8 @@
+sources:
+  - name: raw
+    database: faker_store
+    schema: raw
+    tables:
+      - name: carts
+      - name: products
+      - name: users

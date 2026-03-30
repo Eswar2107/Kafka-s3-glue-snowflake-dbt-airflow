@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: bronze_carts
+  
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+
+  - name: bronze_products
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: price
+        data_tests:
+          - generic_test

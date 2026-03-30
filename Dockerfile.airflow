@@ -1,0 +1,9 @@
+FROM apache/airflow:2.7.3
+
+USER airflow
+
+RUN pip install --no-cache-dir \
+    dbt-core==1.8.4 \
+    dbt-snowflake==1.8.4 \
+    apache-airflow-providers-amazon boto3 kafka-python
+
